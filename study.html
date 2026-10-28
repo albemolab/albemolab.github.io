@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The cross-lingual study</title>
+<meta name="description" content="Which speech models actually recognise emotion across languages? A confound-controlled comparison, published in Transactions on Machine Learning Research, explained in plain language.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e41e20'/%3E%3Cstop offset='1' stop-color='%23d9a441'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="site-title" href="index.html">Emotion Recognition in Communication</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="albemo.html">AlbEmo</a></li>
+        <li><a href="study.html" aria-current="page">Cross-lingual study</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="team.html">People</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero small">
+  <div class="inner">
+    <span class="eyebrow">The study</span>
+    <h1>Which speech models work across languages?</h1>
+    <p class="lede">Three speech models, five languages, one fair test.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#e41e20"/><stop offset="0.5" stop-color="#d9a441"/><stop offset="1" stop-color="#f0c96b"/></linearGradient></defs>
+    <path d="M0,70 C50,10 100,130 150,70 S250,10 300,70 S400,130 450,70 S550,10 600,70 S700,130 750,70 S850,10 900,70 S1000,130 1050,70 S1150,10 1200,70" fill="none" stroke="url(#wg)" stroke-width="3"/>
+  </svg>
+</section>
+
+<main id="main">
+<div class="callout key">
+  <p><strong>The finding in short.</strong> Specialised emotion AI models don't keep their edge once the comparison is made fair. With speaker identity and the evaluation procedure controlled, general-purpose speech models trained with no emotion labels at all matched or beat the specialist, which makes them the safer choice for a low-resource language like Albanian.</p>
+</div>
+
+<h2>Why the question matters</h2>
+<p>Almost nobody trains an emotion recogniser from scratch any more. You take a large speech model that has already listened to thousands of hours of audio, keep it fixed, and train a small classifier on top. The large model does the hard listening, so for a language with little data, choosing it is the decision that matters most.</p>
+<p>A 2024 paper reported that a model pretrained on emotional speech, called emotion2vec, beat general-purpose models by 25 to 45 percentage points in several non-English languages. If true, that would settle the choice for Albanian.</p>
+
+<h2>The three models</h2>
+<ul>
+  <li><strong>HuBERT</strong> and <strong>WavLM</strong> are general-purpose speech models from Meta and Microsoft, trained on 960 hours of English audiobooks with no emotion labels at all.</li>
+  <li><strong>emotion2vec</strong> is the specialist, trained on 262 hours of emotional speech.</li>
+</ul>
+<p>Each turns a clip into a list of 768 numbers. The study put the same small classifier on top of each and asked it to pick one of four emotions: angry, happy, neutral or sad.</p>
+
+<h2>The fairness rule</h2>
+<p>The speakers in the test set never appear in training. Otherwise a classifier can partly recognise familiar voices rather than emotions, which inflates the scores. The original comparison used random splits that let this happen.</p>
+
+<h2>What was found</h2>
+<ol class="steps">
+  <li><strong>Within each language.</strong> Across five corpora in German, English, Mandarin and Bangla, emotion2vec came last every time. The general models reached 78% to 93% accuracy; on Bangla the three were effectively tied.</li>
+  <li><strong>On the original paper's own procedure.</strong> emotion2vec was again the weakest. The published advantage traces to general-purpose models that were configured far below what they can do.</li>
+  <li><strong>On Thai.</strong> A version of emotion2vec further tuned on emotion data did worse on Thai, a language outside that data, than both general models and its own untuned version.</li>
+  <li><strong>Across languages.</strong> Trained in one language and tested in another, emotion2vec trailed by 13 to 18 percentage points, and still by about 10 after adding 100 labelled examples from the target language.</li>
+</ol>
+
+<figure class="narrow">
+  <img src="figures/fewshot_transfer_clean.png" alt="Line chart of accuracy against number of target-language examples, 0, 10, 50 and 100, averaged over twelve language pairs. HuBERT and WavLM rise from about 0.57 and 0.52 to 0.75. emotion2vec rises from 0.39 to 0.66, staying below the others throughout. Chance is 0.25.">
+  <figcaption>Training in one language and testing in another, averaged over twelve language pairs, as labelled examples from the target language are added. The general models (blue and green) stay ahead of the specialist (red) throughout. The dashed line is guessing.</figcaption>
+</figure>
+
+<p>The chart has a second lesson for Albanian. Just 100 labelled examples close about two-thirds of the gap between zero-shot transfer and training in the language itself. A small, validated corpus like <a href="albemo.html">AlbEmo</a> goes a long way.</p>
+
+<h2>Ruling out a shortcut</h2>
+<p>Did the general models win only by recognising <em>who</em> was speaking? The study erased speaker identity from the numbers and re-ran the test. The ranking held, and if anything the test favoured emotion2vec, which had less speaker information to lose.</p>
+
+<h2>Read more</h2>
+<div class="callout">
+  <p><strong>Paper.</strong> Alex Thomo, "Re-Examining emotion2vec's Cross-Lingual Advantage: A Confound-Controlled Comparison of Self-Supervised Speech Models," <em>Transactions on Machine Learning Research</em>, 2026. Open access on OpenReview at <a href="https://openreview.net/forum?id=RBUnKFHagf">openreview.net/forum?id=RBUnKFHagf</a>.</p>
+  <p><strong>Code.</strong> <a href="https://github.com/thomouvic/ser-cross-ling-pub">github.com/thomouvic/ser-cross-ling-pub</a> (MIT licence).</p>
+  <p><strong>Data.</strong> The extracted model outputs for the public corpora are archived on OSF at <a href="https://doi.org/10.17605/OSF.IO/8VCH9">doi.org/10.17605/OSF.IO/8VCH9</a>.</p>
+</div>
+</main>
+
+<section class="support" aria-label="Supported by">
+  <div class="inner">
+    <span class="label">Supported in part by</span>
+    <a href="https://www.iie.org/programs/research-expertise-from-the-academic-diaspora/"><img src="images/read.png" alt="READ, Research Expertise from the Academic Diaspora"></a>
+    <a href="https://www.aadf.org/"><img src="images/aadf.svg" alt="Albanian-American Development Foundation"></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>Emotion Recognition in Communication, 2025-26. Not an official READ Program website; views are the project team's own.</p>
+    <p>Contact: Ana Ktona, <a href="mailto:ana.ktona@fshn.edu.al">ana.ktona@fshn.edu.al</a></p>
+  </div>
+</footer>
+</body>
+</html>

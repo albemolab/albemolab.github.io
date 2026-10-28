@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlbEmo, the Albanian emotional speech corpus</title>
+<meta name="description" content="AlbEmo is the first emotional speech corpus for Albanian: 420 recordings by ten speakers in seven emotions, validated by native listeners and released openly.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e41e20'/%3E%3Cstop offset='1' stop-color='%23d9a441'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='14' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="site-title" href="index.html">Emotion Recognition in Communication</a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="albemo.html" aria-current="page">AlbEmo</a></li>
+        <li><a href="study.html">Cross-lingual study</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="team.html">People</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero small">
+  <div class="inner">
+    <span class="eyebrow">The corpus</span>
+    <h1>AlbEmo</h1>
+    <p class="lede">The first emotional speech corpus for Albanian. Ten speakers, seven emotions, 420 recordings, every label checked by native listeners, released for anyone to use.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="wg" x1="0" x2="1"><stop offset="0" stop-color="#e41e20"/><stop offset="0.5" stop-color="#d9a441"/><stop offset="1" stop-color="#f0c96b"/></linearGradient></defs>
+    <path d="M0,70 C50,10 100,130 150,70 S250,10 300,70 S400,130 450,70 S550,10 600,70 S700,130 750,70 S850,10 900,70 S1000,130 1050,70 S1150,10 1200,70" fill="none" stroke="url(#wg)" stroke-width="3"/>
+  </svg>
+</section>
+
+<main id="main">
+
+<div class="facts" aria-label="Corpus at a glance">
+  <div class="fact"><span class="n">10</span><span class="l">speakers</span></div>
+  <div class="fact"><span class="n">7</span><span class="l">emotions</span></div>
+  <div class="fact"><span class="n">420</span><span class="l">recordings</span></div>
+  <div class="fact"><span class="n">73%</span><span class="l">recognised by listeners</span></div>
+</div>
+
+<h2>Why Albanian needed one</h2>
+<p>To teach a computer to hear emotion in a voice, you need recordings of people speaking with emotion, labelled with what each one is meant to express. Collections like this exist for English, German, Mandarin, Bangla and a number of other languages. Albanian, spoken by roughly seven million people, had none, so there was no way even to test whether emotion models built for other languages work for it. AlbEmo closes that gap, in a form directly comparable to the datasets researchers already use.</p>
+
+<h2>What is in it</h2>
+<p>Ten native Albanian speakers, five women and five men, aged from 18 to over 55 and originally from seven regions of Albania, each spoke the same six sentences in seven different emotional styles. The sentences are deliberately ordinary and carry no emotional meaning of their own, so that any emotion a listener hears must come from the voice, not the words. All speakers recorded in Standard Albanian.</p>
+
+<div class="table-wrap">
+<table>
+  <caption class="small">The six carrier sentences, with an English gloss.</caption>
+  <thead><tr><th>Albanian</th><th>English</th></tr></thead>
+  <tbody>
+    <tr><td>U hap dera.</td><td>The door opened.</td></tr>
+    <tr><td>Makina është në garazh.</td><td>The car is in the garage.</td></tr>
+    <tr><td>Ajo po flet në telefon.</td><td>She is talking on the phone.</td></tr>
+    <tr><td>Letra erdhi dje në mëngjes në adresën time.</td><td>The letter came to my address yesterday morning.</td></tr>
+    <tr><td>Dritaret e shtëpisë shohin nga rrugica e vjetër.</td><td>The windows of the house look onto the old alley.</td></tr>
+    <tr><td>Shiu filloi në orën pesë dhe ra gjithë natën.</td><td>The rain started at five and fell all night.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>The seven styles are a neutral reading plus the six emotions that psychologists most often treat as basic and recognisable across cultures.</p>
+<ul class="chips" aria-label="The seven emotional styles">
+  <li class="chip" style="--c:#4a4160">Neutral <small>neutral</small></li>
+  <li class="chip" style="--c:#f08a3c">Gëzim <small>happiness</small></li>
+  <li class="chip" style="--c:#3a4f8f">Trishtim <small>sadness</small></li>
+  <li class="chip" style="--c:#c0392b">Zemërim <small>anger</small></li>
+  <li class="chip" style="--c:#6a1b5a">Frikë <small>fear</small></li>
+  <li class="chip" style="--c:#c2347a">Habi <small>surprise</small></li>
+  <li class="chip" style="--c:#4f7a4a">Neveri <small>disgust</small></li>
+</ul>
+<p>It is the same set used by comparable corpora in other languages, so results can be compared directly. Ten speakers, seven emotions and six sentences give 420 recordings, one for every combination. Each is a single sentence of about three seconds, stored as uncompressed audio, and the whole corpus runs to about 22 minutes.</p>
+
+<figure>
+  <img src="figures/fig_spectrograms.png" alt="Seven spectrograms of the same Albanian sentence spoken in neutral, happy, sad, angry, fearful, surprised and disgusted styles. The patterns of pitch and timing differ visibly between panels.">
+  <figcaption>The same sentence ("Shiu filloi në orën pesë dhe ra gjithë natën") spoken by one speaker in all seven styles, shown as spectrograms, which plot sound frequency over time. The words are identical; pitch, harmonic detail and duration change with the intended emotion. The neutral take runs 4.8 seconds and the angry one 2.5 seconds.</figcaption>
+</figure>
+
+<h2 id="recorded">How it was recorded</h2>
+<p>Each speaker recorded alone, in a quiet office at the University of Tirana in July 2026, using a studio-quality USB microphone and a purpose-built recording tool that runs in a web browser without installation or an internet connection. The tool shows one emotion and one sentence at a time, with a short coaching cue in Albanian asking the speaker to recall a real moment of that emotion and express it a little more strongly than in everyday speech. The speaker presses record, listens back, and re-records as often as they like before moving on.</p>
+<p>Recording privately and at one's own pace was a deliberate choice. Expressing emotion on a neutral sentence is self-conscious work, and the speakers were not professional actors. Being alone, with unlimited retakes and nobody watching, lets people commit to the delivery.</p>
+
+<figure class="narrow">
+  <img src="figures/fig_recorder.png" alt="Screenshot of the recording tool: progress 7 of 42, the emotion Happiness with its coaching cue, Sentence 1 'U hap dera' with its English gloss, and Record, Listen, Save and Next buttons.">
+  <figcaption>The self-recording tool, shown here with English labels. Speakers used the Albanian version. It saves one audio file per sentence, so there is no editing or cutting afterwards.</figcaption>
+</figure>
+
+<p>The audio is released exactly as recorded, with no noise removal or level adjustment.</p>
+
+<h2>How we know the labels are right</h2>
+<p>A speaker trying to sound afraid does not guarantee that a listener hears fear. For an emotion corpus, the labels are only worth something if other people recognise the intended emotion. So every recording was put to a listening test.</p>
+<p>Four native Albanian listeners took part. Each heard recordings one at a time, in a shuffled order, with no indication of the intended emotion or the file name, and chose one of the seven categories. Every recording was judged by three of the four listeners, which gives 1,260 judgements in total. Nobody rated their own recordings.</p>
+<p>Across the whole corpus, listeners picked the intended emotion 73% of the time. Guessing among seven options would get about 14%. Surprise was the easiest to recognise, at 84%, and disgust the hardest, at 41%. Disgust is notoriously hard to convey from the voice alone, in other languages too.</p>
+
+<figure class="narrow">
+  <img src="figures/fig_per_emotion.png" alt="Bar chart of recognition rate by emotion. Raw recognition: surprise 84, neutral 82, sadness 81, anger 81, happiness 77, fear 64, disgust 41 percent. A dashed line marks the 14 percent chance level.">
+  <figcaption>How often listeners chose the intended emotion. Darker bars are the plain recognition rate; lighter bars correct for answers listeners over-use. The dashed line is chance.</figcaption>
+</figure>
+
+<p>The mistakes are as telling as the hits. The chart below shows, for each intended emotion, what listeners actually heard. The strong diagonal means the intended category always won. Where errors occur they follow familiar lines. Disgust was most often mistaken for anger or sadness, and happiness and surprise were occasionally taken for each other.</p>
+
+<figure class="narrow">
+  <img src="figures/fig_confusion.png" alt="Confusion matrix with intended emotion on rows and perceived emotion on columns. Diagonal values: neutral 82, happiness 77, sadness 81, anger 81, fear 64, surprise 84, disgust 41. Largest off-diagonal entries are disgust heard as anger (18) and as sadness (13).">
+  <figcaption>What listeners heard, for each intended emotion. Each row adds up to 100%. Darker cells mean more responses.</figcaption>
+</figure>
+
+<p>A second question is whether the listeners agree with each other. Statisticians summarise this with an agreement score from 0 (no better than chance) to 1 (everyone always agrees), known as Fleiss' kappa. For AlbEmo it is 0.59, in the "moderate" band and on a par with the best-known acted corpora in Bangla and English. Every individual judgement is released with the audio, so users can give more weight to the clips everyone agreed on.</p>
+
+<h2>A reference point for machines</h2>
+<p>As a check that the recordings carry emotional information a computer can pick up, the paper reports a simple baseline. A general-purpose speech model called WavLM converts each recording into a list of numbers, and a basic classifier then tells the seven emotions apart for each speaker. It gets 74% right, on a par with the German and English corpora the design is modelled on.</p>
+
+<h2>Ethics and consent</h2>
+<p>The study was approved by the Ethics Council of the University of Tirana. All participants were adults, gave written informed consent in Albanian and English, and were paid for their time. Speakers and listeners appear in the released data only as anonymous codes.</p>
+
+<h2>Get the data</h2>
+<div class="callout">
+  <p><strong>Corpus.</strong> Archived on Zenodo at <a href="https://doi.org/10.5281/zenodo.21638085">doi.org/10.5281/zenodo.21638085</a> under a Creative Commons Attribution 4.0 licence, free to download without registration. The deposit holds the audio, the metadata and the anonymised listening-test responses.</p>
+  <p><strong>Tools and scripts.</strong> The recording tool, the listening-test tool and the analysis scripts are in a public code repository at <a href="https://github.com/thomouvic/albemo-public">github.com/thomouvic/albemo-public</a>. The tools need no server and no installation, so the same protocol can be applied to another language.</p>
+  <p><strong>Paper.</strong> Loka, Lili, Kika, Ktona, Mëniku and Thomo, "AlbEmo: A perceptually validated emotional speech dataset for Albanian," <em>Data in Brief</em> 69 (2026) 113282, open access at <a href="https://doi.org/10.1016/j.dib.2026.113282">doi.org/10.1016/j.dib.2026.113282</a>.</p>
+</div>
+<p class="small">The recordings themselves live on Zenodo, where you can listen to them.</p>
+</main>
+
+<section class="support" aria-label="Supported by">
+  <div class="inner">
+    <span class="label">Supported in part by</span>
+    <a href="https://www.iie.org/programs/research-expertise-from-the-academic-diaspora/"><img src="images/read.png" alt="READ, Research Expertise from the Academic Diaspora"></a>
+    <a href="https://www.aadf.org/"><img src="images/aadf.svg" alt="Albanian-American Development Foundation"></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>Emotion Recognition in Communication, 2025-26. Not an official READ Program website; views are the project team's own.</p>
+    <p>Contact: Ana Ktona, <a href="mailto:ana.ktona@fshn.edu.al">ana.ktona@fshn.edu.al</a></p>
+  </div>
+</footer>
+</body>
+</html>
