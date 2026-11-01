@@ -49,6 +49,11 @@ block on the home page, newest first.
   each person confirms them.
 - No audio is hosted here. The corpus lives on Zenodo (10.5281/zenodo.21638085).
 
+## Caching
+
+Pages load `css/style.css?v=N` and `js/nav.js?v=N`. After changing either file,
+bump N on every page, or phones keep showing the old version.
+
 ## Rules for editing
 
 - Speakers in the corpus are anonymous (sp01 to sp10). Never state or imply
