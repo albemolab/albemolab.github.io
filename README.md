@@ -34,6 +34,7 @@ block on the home page, newest first.
 | `albemo.html` | The AlbEmo corpus for a general reader |
 | `study.html` | The TMLR cross-lingual study in plain language |
 | `prototype.html` | The multimodal research prototype (added 2026-11-01 from Ana's note; its paper by Ilma and Emiranda is in preparation, and Alex confirmed the figures with the team) |
+| `seminar.html` | Closing seminar, 20 Nov 2026 (the READ application's "capstone seminar"; Ana is considering renaming it "workshop"). After the event, turn it into a short report |
 | `publications.html` | Citations, dataset, code |
 
 ## Where things come from
