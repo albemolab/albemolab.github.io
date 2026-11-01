@@ -41,7 +41,7 @@ each person's approval.
 | Ilma Lili | https://fshn.edu.al/Departments/departamenti-i-informatikes/Personel/msc-ilma-lili. Alex confirmed on 2026-10-07 that she completed her PhD in summer 2026; the bio says so. |
 | Alda Kika | https://fshn.edu.al/Departments/departamenti-i-informatikes/Personel/prof-asoc-dr-alda-kika. Her page lists her as vice dean; Alex confirmed on 2026-10-07 that she now heads the Department of Informatics, and the site says so. |
 | Linda Mëniku | https://fhf.edu.al/departamentet/departamenti-i-gjuhesise/ and a 2013 conference speaker bio, https://conference.pixel-online.net/conferences/ICT4LL2013/common/download/Speakers_pdf/082-MTL03-SP-Meniku-ICT2013.pdf |
-| Collaborators | Individual fshn.edu.al pages linked from team.html. Endri Xhina's page still lists him as Associate Professor and head of department; Alex confirmed on 2026-10-07 that he is now Professor and no longer head, and the site says so. |
+| Collaborators | Individual fshn.edu.al pages linked from team.html. Endrit Xhina's page still lists him as Associate Professor and head of department; Alex confirmed on 2026-10-07 that he is now Professor and no longer head, and the site says so. |
 
 ## Open items
 

@@ -33,11 +33,14 @@ block on the home page, newest first.
 | `team.html` | People (nav label "People") |
 | `albemo.html` | The AlbEmo corpus for a general reader |
 | `study.html` | The TMLR cross-lingual study in plain language |
+| `prototype.html` | The multimodal research prototype (added 2026-11-01 from Ana's note; its paper by Ilma and Emiranda is in preparation, and Alex confirmed the figures with the team) |
 | `publications.html` | Citations, dataset, code |
 
 ## Where things come from
 
-- Every statistic on the site was checked against the published AlbEmo paper
+- The one exception is `prototype.html` (860 recordings, 150 scenarios), which
+  comes from Ana's description pending the paper. Link the paper when it appears.
+- Every other statistic on the site was checked against the published AlbEmo paper
   (Data in Brief 69, 2026, 113282) or the TMLR camera-ready source.
 - `figures/` are the PNG figures from the two papers, unmodified.
 - `images/` holds photos and logos. Their provenance is recorded in
