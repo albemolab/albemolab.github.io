@@ -427,6 +427,11 @@ figure.feature { max-width: var(--max); margin: 8px auto 0; }
 }
 .support .label { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; }
 .support img { height: 46px; width: auto; }
+@media (max-width: 640px) {
+  .support .inner { gap: 14px 28px; padding: 20px 16px 22px; }
+  .support .label { width: 100%; text-align: center; font-size: 0.72rem; }
+  .support img { height: 38px; }
+}
 
 /* Timeline */
 
