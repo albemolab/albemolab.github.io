@@ -12,8 +12,8 @@ Published with GitHub Pages from the `main` branch root of
 
 - English only. No Albanian version for now.
 - The TMLR cross-lingual study is presented as a project output.
-- Team page: the six AlbEmo co-authors with photos and bios, the four other
-  collaborators from the READ proposal listed by name.
+- Team page: two project leads and nine members, all with photos and one-line
+  bios. Renisa Beqiri (psychologist) was added on Ana's request on 2026-11-02.
 - Hosted under the `albemolab` GitHub organization (2026-10-28).
 
 ## Style (2026-10-28)

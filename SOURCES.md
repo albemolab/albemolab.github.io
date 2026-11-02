@@ -13,6 +13,7 @@ until they say so. Replace any item on request.
 | `alda-kika.jpg` | Alda Kika | https://api.fshn.edu.al/uploads/Alda_Kika_dc7cdf538b.jpg (fshn.edu.al profile portrait) | Downscaled from 4000x6000 to 400x600 |
 | `ilma-lili.jpg` | Ilma Lili | https://api.fshn.edu.al/uploads/Screenshot_2024_09_30_203121_d57636035b.png (fshn.edu.al profile portrait) | Only 180x287 and a screenshot crop; ask for a better one |
 | `linda-meniku.jpg` | Linda Mëniku | https://fhf.edu.al/wp-content/uploads/2026/01/WhatsApp-Bild-2025-02-05-um-23.13.07_c143eea3-1024x1024-1.jpg (Department of Linguistics staff list) | Downscaled to 600x600 |
+| `renisa-beqiri.jpg`, `arber-ceni.jpg`, `anxhela-kosta.jpg`, `mirvjen-ulqinaku.jpg`, `endri-xhina.jpg` | Renisa Beqiri, Arbër Ceni, Anxhela Kosta, Mirvjen Ulqinaku, Endri Xhina | Sent to Alex by the team on 2026-11-02 (via Ana) | Cropped to 4:5. Endri's had a red banner at the top, cropped off. Mirvjen's is only 98x122; ask for a larger one. |
 | `emiranda-loka.jpg` | Emiranda Loka | Her LinkedIn profile photo, https://www.linkedin.com/in/emiranda-loka-a2034192/, saved by Alex from a logged-in session on 2026-10-07 | Her fshn.edu.al page has no photo. Downscaled to 600x600. Needs her approval. |
 
 ## Logos (`images/`)
@@ -41,7 +42,11 @@ each person's approval.
 | Ilma Lili | https://fshn.edu.al/Departments/departamenti-i-informatikes/Personel/msc-ilma-lili. Alex confirmed on 2026-10-07 that she completed her PhD in summer 2026; the bio says so. |
 | Alda Kika | https://fshn.edu.al/Departments/departamenti-i-informatikes/Personel/prof-asoc-dr-alda-kika. Her page lists her as vice dean; Alex confirmed on 2026-10-07 that she now heads the Department of Informatics, and the site says so. |
 | Linda Mëniku | https://fhf.edu.al/departamentet/departamenti-i-gjuhesise/ and a 2013 conference speaker bio, https://conference.pixel-online.net/conferences/ICT4LL2013/common/download/Speakers_pdf/082-MTL03-SP-Meniku-ICT2013.pdf |
-| Collaborators | Individual fshn.edu.al pages linked from team.html. Endrit Xhina's page still lists him as Associate Professor and head of department; Alex confirmed on 2026-10-07 that he is now Professor and no longer head, and the site says so. |
+| Arbër Ceni | fshn.edu.al profile (data via `POST https://api.fshn.edu.al/graphql`, locale `sq`): full-time lecturer since 2018, MSc RWTH Aachen 2012; interests GIS, social network analysis, deep learning on graphs. |
+| Anxhela Kosta | fshn.edu.al profile: lecturer since 2018, AI teaching-research group. Page heading says "Dr." but the bio lists the PhD as 2022-2025 candidature without stating completion, so the site gives no degree. Ask her. |
+| Mirvjen Ulqinaku | fshn.edu.al page is empty (name only). Topics inferred from his Google Scholar papers (https://scholar.google.com/citations?user=gqmOjzgAAAAJ); rank unknown, so the site gives none. |
+| Endri Xhina | fshn.edu.al profile: PhD in Informatics (FSHN 2009); interests e-government, e-health, e-learning, business process automation, web GIS. His own page, Scholar and RTA-CSIT spell the name "Endri"; the URL slug and the IJELD journal record say "Endrit". The People page uses "Endri"; the IJELD citation keeps the journal's spelling. Page still says Associate Professor and head; Alex confirmed on 2026-10-07 he is now Professor and no longer head. |
+| Renisa Beqiri | Added on Ana's request, 2026-11-02. FSHS staff list (Departamenti Pedagogji-Psikologji) and her bio PDF https://fshs.dev.evolvestudio.de/uploads/Renisa_Beqiri_CV_BIO_UT_5115601716.pdf (developer domain, may not last): Asistente Lektore since 2018, MSc Clinical Psychology, PhD candidate since 2024; interests clinical psychology, mental health, migration, education, research methodology; teaches emotional intelligence. |
 
 ## Open items
 
